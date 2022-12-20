@@ -114,12 +114,16 @@ O dataset possui variáveis do tipo Integer e Object (String). Não há necessid
     
    **Importante destacar que, em geral, as mulheres apresentam uma maior frequencia do que os homens na distribuição de cada um dos atributos. A média da renda anual do genero masculino está maior que a média feminina devido ao outlier**
     
-    - [x]  Como a renda varia em relação à idade?
-    - [x]  Como as variáveis se relacionam entre si?
-
+     - [x]  Como as variáveis contínuas se relacionam entre si?
+    ![Screenshot from 2022-12-20 20-15-05](https://user-images.githubusercontent.com/117869039/208784245-1983b52c-5d6e-4914-81ca-34222dc4709e.png)
+    ![Screenshot from 2022-12-20 20-15-43](https://user-images.githubusercontent.com/117869039/208784316-c77774ba-b0c5-47f6-b022-8392f251aada.png)
+    
+    **Observa-se que não há uma correlação forte entre os atributos.**
 
     
 ## Etapa 5 - Clustering
+
+Deve-se realizar o agrupamento da amostra de frequentadores do shopping grupos de compras mais importantes com base na renda, na idade e na pontuação de compras no shopping.
 
 - Técnica de aprendizado não-supervisionado
 - Algoritimo utilizado: K-Means
