@@ -48,15 +48,27 @@ Nesta etapa, realizou-se a preparação dos dados para a etapa de análise explo
 - Conferindo os tipos de dados presentes no dataset:
 
 ![Screenshot from 2022-12-20 18-47-55](https://user-images.githubusercontent.com/117869039/208773936-00288952-1ba4-4c74-9893-097ff88f3438.png)  
-O dataset possui variáveis do tipo Integer e Object (String). Não há necessidade de alteração dos tipos de variáveis, uma vez que os formatos atendem perfeitamente para os tipos de dados presentes. Idade, Renda e Score são números inteiros e Gênero é uma string.
+O dataset possui variáveis do tipo Integer e Object (String). Não há necessidade de alteração dos tipos de variáveis, uma vez que os formatos atendem perfeitamente os tipos de dados presentes. Idade, Renda e Score são números inteiros e Gênero é uma string.
+
+- Alterações:
+  - A coluna CustomerID não é imnportante para a análise futura e por isso foi removida.
+  - Tradução/mudança dos nomes das colunas: Genre -> Genero; Age -> Idade; Annuak Income (k$) -> Renda_Anual(kR$); Spending Score (1-100) -> Score(1-100)
+  - Tradução das categorias da coluna Genero: Male -> Masculino; Female -> Feminino
+    - Resultado:
+    
+    ![Screenshot from 2022-12-20 19-06-36](https://user-images.githubusercontent.com/117869039/208776602-cada9dcd-6db5-465d-b5b0-79a4ac978105.png)
+   
+- Não foram encontrados valores nulos, NaN e duplicatas.
+
 
 ## Etapa 4 - Análise Exploratória dos Dados
 
-- Na maioria dos casos a gente entra nessa etapa sem saber o que tem nas mãos.
-    - Seu trabalho é mergulhar nos dados que coletou visando extrair informação
-        - Dados → Informação → Insights
-    - Dar sentido aos dados.
-- Foco nas perguntas que preciso responder:
+- Descrição estatística:
+
+![Screenshot from 2022-12-20 19-15-52](https://user-images.githubusercontent.com/117869039/208777347-55b5335a-44cc-4585-ac51-bb9112e08bce.png)
+
+
+- Perguntas:
     - [x]  Quantos visitantes existem no conjunto de dados disponilizado?
     - [x]  Desses visitantes quantos são masculino e feminino?
     - [x]  Como a idade se distribui entre os visitantes?
@@ -64,10 +76,9 @@ O dataset possui variáveis do tipo Integer e Object (String). Não há necessid
     - [x]  Como o score se distribui entre os visitantes?
     - [x]  Como as variáveis se relacionam entre si?
     - [x]  Como a idade varia em relação ao gênero?
-    - [ ]  Como a renda varia em relação ao gênero?
-    - [ ]  Como a renda varia em relação ao idade?
+    - [x]  Como a renda varia em relação ao gênero?
+    - [x]  Como a renda varia em relação ao idade?
 
-- **Análise univariável**
 
 
     
