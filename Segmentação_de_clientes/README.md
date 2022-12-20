@@ -10,7 +10,7 @@
 
 
 - **Quais perguntas podemos responder?**
-    - [ ]  Quantos visitantes existem no conjunto de dados disponilizado?
+    - [ ]  Quantos visitantes existem no conjunto de dados disponilizado? 
     - [ ]  Desses visitantes quantos são do gênero masculino masculino? E do feminino?
     - [ ]  Como a idade se distribui entre os visitantes?
     - [ ]  Como a renda se distribui entre os visitantes?
@@ -67,18 +67,55 @@ O dataset possui variáveis do tipo Integer e Object (String). Não há necessid
 
 ![Screenshot from 2022-12-20 19-15-52](https://user-images.githubusercontent.com/117869039/208777347-55b5335a-44cc-4585-ac51-bb9112e08bce.png)
 
-
+**Análise univariável:**
 - Perguntas:
-    - [x]  Quantos visitantes existem no conjunto de dados disponilizado?
-    - [x]  Desses visitantes quantos são masculino e feminino?
-    - [x]  Como a idade se distribui entre os visitantes?
-    - [x]  Como a renda se distribui entre os visitantes?
-    - [x]  Como o score se distribui entre os visitantes?
-    - [x]  Como as variáveis se relacionam entre si?
-    - [x]  Como a idade varia em relação ao gênero?
-    - [x]  Como a renda varia em relação ao gênero?
-    - [x]  Como a renda varia em relação ao idade?
+    - [x]  **Quantos visitantes existem no conjunto de dados disponilizado?** 200 visitantes
+    - [x]  **Desses visitantes, quantos são masculino e feminino?**
+      - Feminino: 112
+      - Masculino: 88
 
+   ![Screenshot from 2022-12-20 19-29-23](https://user-images.githubusercontent.com/117869039/208779094-0a5bf231-583f-4839-b8d8-2ba6cb0d95a5.png)
+
+    - [x]  **Como a idade se distribui entre os visitantes?**
+    
+    ![Screenshot from 2022-12-20 19-36-59](https://user-images.githubusercontent.com/117869039/208780054-a95cf61a-03a8-400f-9b83-1eb2f62c1919.png)
+    ![Screenshot from 2022-12-20 19-36-04](https://user-images.githubusercontent.com/117869039/208780091-cb9a74be-470d-426d-9d59-8e83ecef914b.png)
+ 
+    - [x]  **Como a renda se distribui entre os visitantes?**
+    
+    ![Screenshot from 2022-12-20 19-41-34](https://user-images.githubusercontent.com/117869039/208780597-cf825840-9dd8-466f-8b67-a4a29189077d.png)
+    ![Screenshot from 2022-12-20 19-42-11](https://user-images.githubusercontent.com/117869039/208780705-5c6555d6-e187-47c2-95c1-396b97cc072d.png)
+    
+    Observa-se a presença de um outlier na amostra: o valor máximo de R$137.000
+    
+    - [x]  **Como o score se distribui entre os visitantes?**
+    
+    ![Screenshot from 2022-12-20 19-53-19](https://user-images.githubusercontent.com/117869039/208781902-af651ac7-89c2-4246-b519-9ef9727837c5.png)
+    ![Screenshot from 2022-12-20 19-54-04](https://user-images.githubusercontent.com/117869039/208781974-6cc7be0c-7b4c-41eb-8568-74bb32cca49e.png)
+    
+    O Score tem uma distribuição próxima da normal. Os valores de média e mediana são bem próximos.
+    
+    
+**Análise bivariável:**
+ - Perguntas:
+    - [x]  Como a idade varia em relação ao gênero?
+    
+    ![Screenshot from 2022-12-20 19-57-10](https://user-images.githubusercontent.com/117869039/208782367-faa769d9-f522-43b7-bb7a-bbe7b57d1eee.png)
+    
+    - [x]  Como a renda varia em relação ao gênero?
+    
+    ![Screenshot from 2022-12-20 19-59-09](https://user-images.githubusercontent.com/117869039/208782581-53fd6d25-6dd5-4d16-be13-22e243256335.png)
+    ![Screenshot from 2022-12-20 19-59-53](https://user-images.githubusercontent.com/117869039/208782650-b9e609af-db25-4674-a71a-bf50517264d5.png)
+    
+    - [x]  Como o Score varia em relação ao gênero?
+    
+    ![Screenshot from 2022-12-20 20-02-39](https://user-images.githubusercontent.com/117869039/208782951-53806546-9a9e-4134-a2b2-e65b4f931efb.png)
+    ![Screenshot from 2022-12-20 20-03-50](https://user-images.githubusercontent.com/117869039/208783072-08792f96-737c-4ecb-8487-5cc9eab2e2ff.png)
+    
+   **Importante destacar que, em geral, as mulheres apresentam uma maior frequencia do que os homens na distribuição de cada um dos atributos. A média da renda anual do genero masculino está maior que a média feminina devido ao outlier**
+    
+    - [x]  Como a renda varia em relação à idade?
+    - [x]  Como as variáveis se relacionam entre si?
 
 
     
