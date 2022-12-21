@@ -121,12 +121,71 @@ O dataset possui variáveis do tipo Integer e Object (String). Não há necessid
     **Observa-se que não há uma correlação forte entre os atributos.**
 
     
-## Etapa 5 - Clustering
+## Etapa 5 - Agrupamento
 
-Deve-se realizar o agrupamento da amostra de frequentadores do shopping grupos de compras mais importantes com base na renda, na idade e na pontuação de compras no shopping.
+Deve-se realizar o agrupamento (com um número ideal de grupos) da amostra de frequentadores do shopping grupos de compras mais importantes com base na renda, na idade e na pontuação de compras no shopping.
 
-- Técnica de aprendizado não-supervisionado
-- Algoritimo utilizado: K-Means
+- **Técnica utilizada:** Será utilizado a clusterização, técnica de machine learning não-supervisionado que tem como objetivo agrupar os dados em determinados conjuntos distintos entre si.
+- **Algoritimo utilizado:** K-Means
+   - Seleciona k pontos (número de centro de clusters) como centróides (posição média) iniciais
+   - Calcula a distância de todos os pontos aos centróides iniciais
+   - Forma k grupos associando os pontos aos centróides mais próximos
+   - Recalcula o centróide de cada grupo obtido
+   - Repete o processo até que os centróides não mudem mais. 
+- **Método para definição nº ideal de clusters:** Elbow method (método do cotovelo)
+   - Usa a distância média dos pontos de um cluster até o seu centróide (WCSS - within cluster sum of squares) para diferentes valores de k.
+   - o WCSS deve ser entendido como a métrica de compactação de determinado cluster. Quanto menor o seu valor, mais compacto é o agrupamento.
+   - Para determinar o número ideal de cluster, devemos escolher o ponto em que não há mais grandes alterações no valor de WCSS com o aumento do número de clusters.
+
+#### Clusterização com base na Idade, Renda e Score
+
+- Calculando os valores de WCSS para cada número de clusters (1 à 10) formados pelo algoritmo K-Means:
+![Screenshot from 2022-12-20 22-04-57](https://user-images.githubusercontent.com/117869039/208796383-425d0d40-5940-471d-a352-3605c599b66c.png)
+
+- Visualização WCSS x número de Clusters:
+
+![Screenshot from 2022-12-20 22-09-39](https://user-images.githubusercontent.com/117869039/208796879-fc89cd6e-5e85-4f9d-8c78-0ee173a841f8.png)
+
+É possível perceber que a última mudança significativa de inclinação no gráfico está localizado no x=4, ou seja, o número ideal de agrupamentos para esse dataset é 4. A partir de 4, não há mais alterações significativas na medida de compactação dos clusters, sendo assim desnecessário utilizar um número maaior de agrupamentos. 
+
+- Visualização:
+
+![Screenshot from 2022-12-20 22-22-38](https://user-images.githubusercontent.com/117869039/208798342-5751b0c7-adec-426f-a1a1-1c66b4838613.png)
+
+Cluster 0: Azul
+
+Cluster 1: Roxo
+
+Cluster 2: Laranja
+
+Cluster 3: Amarelo
 
 ## Etapa 6 - Apresentação
 
+- Informações sobre cada agrupamento de clientes:
+  - Quantidade de clientes em cada cluster:
+    - Cluster 0: 28
+    - Cluster 1: 38
+    - Cluster 2: 39
+    - Cluster 3: 95
+  - Porcentagem de homens e mulheres em cada agrupamento:
+  
+   ![Screenshot from 2022-12-20 22-30-33](https://user-images.githubusercontent.com/117869039/208799263-e230c34f-5c46-4188-a66a-8ed77eac8399.png)
+  
+  - Descrição estatística de cada agrupamento:
+    - Cluster 0:
+    
+    ![Screenshot from 2022-12-20 22-56-19](https://user-images.githubusercontent.com/117869039/208802312-0ac020b9-b0a5-4e7e-b8e4-8eb941da8694.png)
+    
+    - Cluster 1:
+    
+    ![Screenshot from 2022-12-20 22-57-11](https://user-images.githubusercontent.com/117869039/208802420-c2f54f05-e022-4289-941f-945c1fb36638.png)
+    
+    - Cluster 2:
+    
+    ![Screenshot from 2022-12-20 22-57-43](https://user-images.githubusercontent.com/117869039/208802498-2dcb630c-e308-4153-b0b7-e0716637bc39.png)
+    
+    - Cluster 3:
+    
+    ![Screenshot from 2022-12-20 22-58-16](https://user-images.githubusercontent.com/117869039/208802585-affbec7a-42ab-4534-8739-f901c82d0c74.png)
+    
