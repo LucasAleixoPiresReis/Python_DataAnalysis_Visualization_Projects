@@ -11,7 +11,7 @@
 
 - **Quais perguntas podemos responder?**
     - [ ]  Quantos visitantes existem no conjunto de dados disponilizado? 
-    - [ ]  Desses visitantes quantos são do gênero masculino masculino? E do feminino?
+    - [ ]  Desses visitantes quantos são do gênero masculino? E do feminino?
     - [ ]  Como a idade se distribui entre os visitantes?
     - [ ]  Como a renda se distribui entre os visitantes?
     - [ ]  Como o score se distribui entre os visitantes?
@@ -40,6 +40,7 @@
     - Spending Score (1-100) - Score do Visitante
     
     Base de Dados: [clientes_shopping.csv](https://github.com/LucasAleixoPiresReis/python-data-analysis-projects/blob/main/Segmenta%C3%A7%C3%A3o_de_clientes/clientes_shopping.csv)
+    Código (Google colab): [eda_clusterizacao_clientes_shopping.ipynb](https://github.com/LucasAleixoPiresReis/python-data-analysis-projects/tree/main/Segmenta%C3%A7%C3%A3o_de_clientes) 
     
 
 ## Etapa 3 - Limpeza dos Dados
@@ -51,7 +52,7 @@ Nesta etapa, realizou-se a preparação dos dados para a etapa de análise explo
 O dataset possui variáveis do tipo Integer e Object (String). Não há necessidade de alteração dos tipos de variáveis, uma vez que os formatos atendem perfeitamente os tipos de dados presentes. Idade, Renda e Score são números inteiros e Gênero é uma string.
 
 - Alterações:
-  - A coluna CustomerID não é imnportante para a análise futura e por isso foi removida.
+  - A coluna CustomerID não é importante para a análise futura e por isso foi removida.
   - Tradução/mudança dos nomes das colunas: Genre -> Genero; Age -> Idade; Annuak Income (k$) -> Renda_Anual(kR$); Spending Score (1-100) -> Score(1-100)
   - Tradução das categorias da coluna Genero: Male -> Masculino; Female -> Feminino
     - Resultado:
