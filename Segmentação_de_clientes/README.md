@@ -29,7 +29,7 @@
     - Visualização de dados: Matplotlib e Seaborn
     - Machine Learning: Scikit-Learn
 
-- **Código:**[eda_clusterizacao_clientes_shopping.ipynb](https://github.com/LucasAleixoPiresReis/python-data-analysis-projects/blob/main/Segmenta%C3%A7%C3%A3o_de_clientes/eda_clusterizacao_clientes_shopping.ipynb) 
+- **Código:** [eda_clusterizacao_clientes_shopping.ipynb](https://github.com/LucasAleixoPiresReis/python-data-analysis-projects/blob/main/Segmenta%C3%A7%C3%A3o_de_clientes/eda_clusterizacao_clientes_shopping.ipynb) 
 
 
 ## Etapa 2 - Coletando os Dados
