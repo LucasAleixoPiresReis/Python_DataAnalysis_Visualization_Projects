@@ -23,10 +23,13 @@
 
 - **Ferramentas:**
   - Linguagem de Programação: Python
+  - Ambiente: Google Colab
   - Bibliotecas: 
     - Análise de dados: Pandas 
     - Visualização de dados: Matplotlib e Seaborn
     - Machine Learning: Scikit-Learn
+
+- **Código:**Código: [eda_clusterizacao_clientes_shopping.ipynb](https://github.com/LucasAleixoPiresReis/python-data-analysis-projects/blob/main/Segmenta%C3%A7%C3%A3o_de_clientes/eda_clusterizacao_clientes_shopping.ipynb) 
 
 
 ## Etapa 2 - Coletando os Dados
@@ -40,8 +43,6 @@
     - Spending Score (1-100) - Score do Visitante
     
     Base de Dados: [clientes_shopping.csv](https://github.com/LucasAleixoPiresReis/python-data-analysis-projects/blob/main/Segmenta%C3%A7%C3%A3o_de_clientes/clientes_shopping.csv)
-    
-    Código (Google colab): [eda_clusterizacao_clientes_shopping.ipynb](https://github.com/LucasAleixoPiresReis/python-data-analysis-projects/blob/main/Segmenta%C3%A7%C3%A3o_de_clientes/eda_clusterizacao_clientes_shopping.ipynb) 
     
 
 ## Etapa 3 - Limpeza dos Dados
