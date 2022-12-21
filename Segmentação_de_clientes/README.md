@@ -41,7 +41,7 @@
     
     Base de Dados: [clientes_shopping.csv](https://github.com/LucasAleixoPiresReis/python-data-analysis-projects/blob/main/Segmenta%C3%A7%C3%A3o_de_clientes/clientes_shopping.csv)
     
-    Código (Google colab): [eda_clusterizacao_clientes_shopping.ipynb](https://github.com/LucasAleixoPiresReis/python-data-analysis-projects/tree/main/Segmenta%C3%A7%C3%A3o_de_clientes) 
+    Código (Google colab): [eda_clusterizacao_clientes_shopping.ipynb](https://github.com/LucasAleixoPiresReis/python-data-analysis-projects/blob/main/Segmenta%C3%A7%C3%A3o_de_clientes/eda_clusterizacao_clientes_shopping.ipynb) 
     
 
 ## Etapa 3 - Limpeza dos Dados
